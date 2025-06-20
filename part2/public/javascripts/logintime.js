@@ -1,8 +1,6 @@
-document.getElementById("loginFormz").addEventListener("submit",
+document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){
     SENDITNOW.preventDefault()
-
-
 
 var username = document.getElementById("username").value
 var password = document.getElementById("password").value
