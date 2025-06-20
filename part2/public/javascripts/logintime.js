@@ -4,7 +4,7 @@ async function(SENDITNOW){//calls for the form info
 
 var username = document.getElementById("username").value //gets the relevant variables from the login
 var password = document.getElementById("password").value
-var errorElementing = document.getElementById("errorMessaging").value
+var errorElementing = document.getElementById("errorMessaging")
 
 errorElementing.style.display = "none"//hides error message
 
