@@ -28,14 +28,14 @@ let db; //redeclaring database
             password: "",
             database: "DogWalkService"
         })
-        console.log("Database 2nd time connected please")
+        console.log("Database 2nd time connected please") //logs to checks its running each time
     }
     catch (errorM) {
         console.error("this database hates you:", errorM)
     }
 })()
 
-app.post("/api/login", async function(req, res)
+app.post("/api/login", async function(req, res)//sends the login connection 
 {
  try {
     var { username, password } = req.body
