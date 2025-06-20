@@ -100,5 +100,6 @@ h1 {
 }
 
 .hidden-text {
-  color: #ff00ff
+  color: #ff00ff;
+  font-size: 1px;
 }
