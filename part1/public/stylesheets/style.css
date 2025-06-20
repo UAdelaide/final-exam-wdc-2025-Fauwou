@@ -28,6 +28,11 @@ a {
   100% { color: purple; }
 }
 
+@keyframes marquee {
+  from { transform: translate(-50%, -50%) scale(1)}
+  to { transform: translate(-50%, -50%}
+}
+
 h1 {
  font-size: 36px;
  color: black;
