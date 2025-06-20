@@ -1,17 +1,7 @@
 
 
 
-    createApp({
-      data() {
-        return {
-          username: "", //given information by user when attempting to log in
-          password: "",
-          error: "",
-          message: 'Welcome to the Dog Walking Service!'
-        };
-      },
-      methods: {
-
+  
         async LOGINNOW() { //login function prepared to run on click
           try {
             var response = await fetch("/api/login", {
