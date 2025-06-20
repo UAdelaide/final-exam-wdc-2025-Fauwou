@@ -9,7 +9,7 @@ var errorElementing = document.getElementById("errorMessaging")
 errorElementing.style.display = "none"//hides error message
 
 try {
-        var response = await fetch("/api/login", {//getting the responded with information from login-form
+        var response = await fetch("/api/Users", {//getting the responded with information from login-form
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
