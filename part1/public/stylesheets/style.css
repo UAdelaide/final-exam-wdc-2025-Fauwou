@@ -25,8 +25,13 @@ a {
   25% { color: blue; }
   50% { color: green; }
   75% { color: yellow; }
-            100% { color: purple; }
+  100% { color: purple; }
 }
+
+h1 {
+
+}
+
 
 .dog-container {
   position: absolute;
