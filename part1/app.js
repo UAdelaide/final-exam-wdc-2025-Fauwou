@@ -41,7 +41,9 @@ let db;
         await connection.query(SQLGrabber)
         await connection.end()
 
-        
+        db await mysql.createConnection({
+            host: localhost"
+        })
 
 
     await dataTesting() /* please work as well later */
