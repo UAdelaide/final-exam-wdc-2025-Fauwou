@@ -90,7 +90,7 @@ await db.execute
 	((SELECT dog_id FROM Dogs WHERE name = "Jerm"), "2025-06-10 13:30:00", 60, "Norfolk Square", "cancelled"),
 	((SELECT dog_id FROM Dogs WHERE name = "Cat"), "2025-06-12 07:00:00", 120, "Gerudo Park", "open"),
 	((SELECT dog_id FROM Dogs WHERE name = "Snowy"), "2025-06-13 18:30:00", 30, "Mineru Ave", "open");
-  `)
+`)
 
 await db.execute
 (`
