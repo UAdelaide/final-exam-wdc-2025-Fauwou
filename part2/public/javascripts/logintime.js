@@ -29,10 +29,10 @@
                 } else {
                     window.location.href = "walker-dashboard.html"
                 }
-                else {
-                    
-                }
+            else {
+
             }
+
 
           }
           catch (errorM) { //catch error for if the login doesn't work
