@@ -33,9 +33,8 @@ h1 {
  color: black;
  text-shadow: 5px 5px 0 #FFFF00, -5px, -5px 0 #FF0000;
  text-align: center;
- animation: colorChange
+ animation: colorChange 4s infinite;
 }
-
 
 .dog-container {
   position: absolute;
