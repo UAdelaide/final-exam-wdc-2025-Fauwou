@@ -1,4 +1,4 @@
-
+document.getElementById("loginFormz").addEventListener
 
 
 var username = document.getElementById("username").value
