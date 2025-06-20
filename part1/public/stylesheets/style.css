@@ -30,6 +30,14 @@ a {
   100% { color: purple; }
 }
 
+@keyframes marqueecolorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: yellow; }
+  100% { color: purple; }
+}
+
 @keyframes marquee {
   0% { transform: translateX(100%)}
   100% { transform: translateX(-100%)}
@@ -42,11 +50,6 @@ a {
   100% { transform: scale(1) }
 }
 
-@keyframes pulse2 {
-  0% { transform: scale(1) }
-  43% { transform: scale(1.9) }
-  100% { transform: scale(1) }
-}
 
 h1 {
  font-size: 60px;
