@@ -33,8 +33,7 @@ let db;
             password: "",
             multiplestatements: true
         })
-        
-    }
+
 
 
     await dataTesting() /* please work as well later */
