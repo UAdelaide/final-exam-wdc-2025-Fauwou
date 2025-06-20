@@ -19,9 +19,9 @@ try {
 
             if (dataplease.success)
             {
-                if (dataplease.role === "owner")
+                if (dataplease.role === "owner") //checks if owner was found in the response
                 {
-                    window.location.href = "owner-dashboard.html"
+                    window.location.href = "owner-dashboard.html" //redirecting to owner if so
                 } else {
                     window.location.href = "walker-dashboard.html"
                 }
