@@ -20,7 +20,14 @@ a {
   to { transform: translate(-50%, -50%) scale(1.5)}
 }
 
-@
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: yellow; }
+            100% { color: purple; }
+}
+
 .dog-container {
   position: absolute;
   top: 50%;
