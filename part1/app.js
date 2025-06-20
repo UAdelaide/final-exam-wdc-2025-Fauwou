@@ -41,7 +41,7 @@ let db;
         await connection.query(SQLGrabber)
         await connection.end()
 
-        db await mysql.createConnection({
+        db = await mysql.createConnection({
             host: "localhost",
             user: "root",
             password: "",
