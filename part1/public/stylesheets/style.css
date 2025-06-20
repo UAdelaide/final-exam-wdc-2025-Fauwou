@@ -29,8 +29,8 @@ a {
 }
 
 @keyframes marquee {
-  from { transform: translateX(100%)}
-  to { transform: translateX(-100%)}
+  0% { transform: translateX(100%)}
+  100% { transform: translateX(-100%)}
 }
 
 h1 {
@@ -83,4 +83,5 @@ h1 {
   left: 0;
   display: flex;
   flex-wrap: wrap;
+
 }
