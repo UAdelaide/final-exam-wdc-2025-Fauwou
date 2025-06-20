@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 const app = express();
+const mysql = require("mysql2/promise")
 const session = require("express-session") //added this
 
 // Middleware
