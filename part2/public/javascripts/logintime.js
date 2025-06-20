@@ -36,6 +36,7 @@
           }
           catch (errorM) { //catch error for if the login doesn't work
             errorElement.textContent = "Login could not succeed because it failed. Try again."
+            errorElement.classList.remove("")
           }
         }
       }
