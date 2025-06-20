@@ -84,6 +84,7 @@ h1 {
 }
 
 button {
+  background-color: #000000;
   color: #FFFFFF;
   border:none;
   padding: 30px;
