@@ -83,7 +83,7 @@ h1 {
   overflow: hidden;
 }
 
-.button_FLASHER {
+button {
   border:none;
   padding: 30px;
   font-size: 24px;
