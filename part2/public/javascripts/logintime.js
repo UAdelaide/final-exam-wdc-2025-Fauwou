@@ -1,6 +1,7 @@
 
 
 
+var username = document.getElementById("username")
 
 try {
         var response = await fetch("/api/login", {
