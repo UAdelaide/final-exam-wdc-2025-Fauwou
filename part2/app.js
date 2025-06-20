@@ -37,8 +37,10 @@ app.post("/api/login", async function(req, res, next){
         req.session.usering =
         {
             id: usering.user_id,
-            
+            username: usering.username,
+            role: usering.role
         }
+        res.json
     }
 }
  catch (errorM) {
