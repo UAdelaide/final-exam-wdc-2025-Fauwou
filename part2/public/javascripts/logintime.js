@@ -11,6 +11,7 @@
         };
       },
       methods: {
+        
         async LOGINNOW() { //login function prepared to run on click
           try {
             var response = await fetch("/api/login", {
