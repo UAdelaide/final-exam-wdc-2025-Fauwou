@@ -55,7 +55,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
             username: usering.username,
             role: usering.role
         }
-        res.json({ //checks with the login via 
+        res.json({ //checks with the login via the success responses
             success:true,
             role: usering.role
         })
@@ -66,7 +66,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
         })
     }
 }
- catch (errorM) {
+ catch (errorM) {//
     console.error("da login fail forever:", errorM)
     res.status(500).json({
         success: false,
