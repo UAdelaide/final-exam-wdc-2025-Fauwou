@@ -29,8 +29,9 @@
                 } else {
                     window.location.href = "walker-dashboard.html"
                 }
-            else {
+            } else {
                 error.Element.textContent = "Wrong username or password inputted, thanks."
+            
             }
 
 
