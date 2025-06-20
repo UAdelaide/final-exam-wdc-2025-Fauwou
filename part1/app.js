@@ -37,9 +37,7 @@ let db;
             multipleStatements: true
         })
 
-        var SQLGrabber = fs.readFileSync(
-            path.join(__dirname, "dogwalks.sql"), "utf8"
-        )
+        var SQLGrabber = fs.readFileSync(path.join(__dirname, "dogwalks.sql"), "utf8")
         await connection.query(SQLGrabber)
         await connection.end()
 
