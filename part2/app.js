@@ -18,7 +18,10 @@ app.post("/api/login", async function(req, res, next){
  try {
     var { username, password } = req.body
 
-    var [users] = await db.
+    var [users] = await db.execute
+    (
+        
+    )
 }
  catch (errorM) {
     console.error("da login fail forever:", errorM)
