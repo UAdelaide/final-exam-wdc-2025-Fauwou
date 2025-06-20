@@ -24,6 +24,9 @@
             if (dataplease.success)
             {
                 if (dataplease.role === "owner")
+                {
+                    window.location.href 
+                }
             }
 
           }
