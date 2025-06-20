@@ -21,6 +21,7 @@ app.post("/api/login", async function(req, res, next){
     var [users] = await db.execute
     (`
         SELECT user_id, username, role FROM Users
+        WHERE username = ? AND password_hash = ?
     `)
 }
  catch (errorM) {
