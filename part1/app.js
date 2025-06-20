@@ -108,9 +108,11 @@ await db.execute
         5, "FANTASTIC!"),
     (5, (SELECT user_id FROM Users WHERE username = "davetruss"),
         (SELECT owner_id FROM Dogs WHERE dog_id = (SELECT dog_id FROM WalkRequests WHERE request_id = 5)),
-        
+        4, "Great walker.")
 `)
-
+} catch (errorM) {
+	console.error("Data didn't insert:", errorM)
+	}
 }
 
 
