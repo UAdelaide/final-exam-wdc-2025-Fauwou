@@ -31,7 +31,10 @@ app.post("/api/login", async function(req, res, next){
         [username, password]
     )
 
-    if ()
+    if (users.length > 0)
+    {
+        var user = users[0]
+    }
 }
  catch (errorM) {
     console.error("da login fail forever:", errorM)
