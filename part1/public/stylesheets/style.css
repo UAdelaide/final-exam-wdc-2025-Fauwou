@@ -40,7 +40,7 @@ a {
   60% { color: rgb(22, 27, 35); }
   70% { color: rgb(255, 0, 166); }
   80% { color: rgb(170, 255, 0); }
-  90% { color: blue; }
+  90% { color: rgb(255, 0, 0); }
   100% { color: purple; }
 }
 
