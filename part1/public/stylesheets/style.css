@@ -32,7 +32,7 @@ a {
 
 @keyframes marqueecolorChange {
   0% { color: red; }
-  25% { color: blue; }
+  10% { color: blue; }
   50% { color: green; }
   75% { color: yellow; }
   100% { color: purple; }
