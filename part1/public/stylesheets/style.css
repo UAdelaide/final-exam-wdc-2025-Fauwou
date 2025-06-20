@@ -124,5 +124,9 @@ button {
 }
 
 .contentCONTAIN {
-
+  display: flex;
+  align-items: flex-start;
+  margin-top: 60px; /* Space for marquee */
+  min-height: calc(100vh - 200px); /* Account for header and buttons */
+  padding-bottom: 80px;
 }
