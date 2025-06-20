@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-/* ^ regular section */
+                                                                        /* ^ regular section */
 
 
 
@@ -27,6 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+
+
+
+
+                                                                    /* end section */
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
