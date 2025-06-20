@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 /* DATABASE SECTION */
-
+let db;
 
 
 
