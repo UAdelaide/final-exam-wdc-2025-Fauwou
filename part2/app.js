@@ -9,7 +9,15 @@ const session = require("express-session") //added this
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
+
 //everything below here added
+app.use(session({
+    secret: "your-stupid-secret-keytemporarytest",
+    resave: false,
+    saveUninitialized: true,
+    cookie: {secure: false}
+}))
+
 let db;
 
 (async function() {
