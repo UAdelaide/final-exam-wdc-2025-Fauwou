@@ -31,10 +31,8 @@
                 }
             } else {
                 error.Element.textContent = "Wrong username or password inputted, thanks."
-            
+                error.Element.classList.remove("")
             }
-
-
           }
           catch (errorM) { //catch error for if the login doesn't work
             this.error = "Login could not succeed because it failed."
