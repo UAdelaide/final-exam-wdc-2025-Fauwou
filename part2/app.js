@@ -34,7 +34,11 @@ app.post("/api/login", async function(req, res, next){
     if (users.length > 0)
     {
         var usering = users[0]
-        req.session.usering
+        req.session.usering =
+        {
+            id: usering.user_id,
+            
+        }
     }
 }
  catch (errorM) {
