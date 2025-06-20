@@ -62,6 +62,7 @@ let db;
 
 async function dataTesting()
 {
+try {
 await db.execute
 (`
  INSERT INTO Users (username, email, password_hash, role) VALUES
@@ -110,7 +111,7 @@ await db.execute
         (SELECT owner_id FROM Dogs WHERE dog_id = (SELECT dog_id FROM WalkRequests WHERE request_id = 5)),
         4, "Great walker.")
 `)
-} catch (errorM) {
+    } catch (errorM) {
 	console.error("Data didn't insert:", errorM)
 	}
 }
