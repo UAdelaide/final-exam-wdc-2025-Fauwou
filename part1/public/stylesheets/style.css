@@ -33,6 +33,7 @@ a {
   100% { transform: translateX(-100%)}
 }
 
+@
 h1 {
  font-size: 36px;
  color: black;
