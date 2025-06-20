@@ -45,9 +45,8 @@ let db;
             host: "localhost",
             user: "root",
             password: "",
-            
+            database: "DogWalkService"
         })
-
 
     await dataTesting() /* please work as well later */
 
