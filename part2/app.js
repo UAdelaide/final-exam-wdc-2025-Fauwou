@@ -33,7 +33,7 @@ let db;
 })()
 
 app.use(session({
-    secret: "your-stupid-secret-key",
+    secret: "your-stupid-secret-keytemporarytest",
     resave: false,
     saveUninitialized: true,
     cookie: {secure: false}
