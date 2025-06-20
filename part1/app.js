@@ -35,7 +35,8 @@ let db;
         })
     }
 
-    
+
+    await dataTesting() /* please work as well later */
 
     } catch (errorM) {
         console.error("database setup did not finish:", errorM)
