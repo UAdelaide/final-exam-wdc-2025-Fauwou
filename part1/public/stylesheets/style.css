@@ -132,7 +132,6 @@ button {
   padding: 10px;
   background: rgba(0,0,0,0.7);
   z-index: 1000;
-  animation: textcolorChange 0.5s infinite;
 }
 
 .hidden-text {
