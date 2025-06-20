@@ -21,9 +21,9 @@ try {
             {
                 if (dataplease.role === "owner") //checks if owner was found in the response
                 {
-                    window.location.href = "owner-dashboard.html" //redirecting to owner if so
-                } else {
-                    window.location.href = "walker-dashboard.html" //redirecting to walker if not owner, but still valid
+                    window.location.href = "/owner-dashboard.html" //redirecting to owner if so
+                } else if {
+                    window.location.href = "/walker-dashboard.html" //redirecting to walker if not owner, but still valid
                 }
             } else { //if all is incorrect, displays error
                 errorElementing.textContent = "Wrong username or password inputted, thanks."
