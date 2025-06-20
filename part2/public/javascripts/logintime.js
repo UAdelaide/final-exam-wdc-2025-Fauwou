@@ -2,9 +2,8 @@
 
 
 
-//login function prepared to run on click
-          try {
-            var response = await fetch("/api/login", {
+try {
+        var response = await fetch("/api/login", {
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
