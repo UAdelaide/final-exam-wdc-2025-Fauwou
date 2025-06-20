@@ -34,7 +34,9 @@ let db;
             multiplestatements: true
         })
 
-        var SQLGrabber = fs.
+        var SQLGrabber = fs.readFileSync(
+            path.join(__dirname, "dogwalks.sql")
+        )
 
 
     await dataTesting() /* please work as well later */
