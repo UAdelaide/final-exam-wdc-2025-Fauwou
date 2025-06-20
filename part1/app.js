@@ -127,7 +127,9 @@ app.get("/api/walkers/summary", async function(req, res, next)
 })
 
                                                                     /* end section */
-app.use('/', indexRouter);
+
+/*app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app;
