@@ -25,7 +25,9 @@
             {
                 if (dataplease.role === "owner")
                 {
-                    window.location.href 
+                    window.location.href = "owner-dashboard.html"
+                } else {
+                    
                 }
             }
 
