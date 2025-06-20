@@ -38,7 +38,7 @@ let db;
 
 
 
-
+/*pre-existing info as sample/ current data*/
 
 await db.execute
 (`
