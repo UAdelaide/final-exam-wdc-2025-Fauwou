@@ -1,8 +1,8 @@
 
 
 
-  
-        async LOGINNOW() { //login function prepared to run on click
+
+//login function prepared to run on click
           try {
             var response = await fetch("/api/login", {
                 method: "POST",
@@ -28,6 +28,3 @@
             errorElement.textContent = "Login could not succeed because it failed. Try again."
             errorElement.classList.remove("")
           }
-        }
-      }
-    })
