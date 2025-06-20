@@ -52,5 +52,9 @@ h1 {
 }
 
 .button_FLASHER {
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
