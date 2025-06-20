@@ -25,8 +25,9 @@ let db;
             password: "",
             database: "DogWalkService"
         })
-        console.log
+        console.log("Database 2nd time connected please")
     }
+    catch
 })
 
 app.use(session({
