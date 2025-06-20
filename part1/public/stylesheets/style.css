@@ -48,7 +48,17 @@ h1 {
 
 
 .INFO-time {
-
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border: 20px dashed lime;
+  font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .button_FLASHER {
