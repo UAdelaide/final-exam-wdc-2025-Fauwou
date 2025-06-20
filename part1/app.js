@@ -27,7 +27,8 @@ let db;
 (async function()
 {
     try {
-        var connection = await mysql.createConnection({
+        var connection = await mysql.createConnection
+        ({
             host: "localhost",
             user: "root",
             password: "",
@@ -39,6 +40,8 @@ let db;
         )
         await connection.query(SQLGrabber)
         await connection.end()
+
+        
 
 
     await dataTesting() /* please work as well later */
