@@ -3,14 +3,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
-var mysql = require("mysql2/promise")
+var mysql = require("mysql2/promise");
+var app = express();
 
 /*
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 */
 
-var app = express();
+
 
 app.use(logger('dev'));
 app.use(express.json());
