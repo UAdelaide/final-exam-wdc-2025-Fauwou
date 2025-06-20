@@ -4,7 +4,9 @@ async function(SENDITNOW){
 
 var username = document.getElementById("username").value
 var password = document.getElementById("password").value
-var errorElement = document.getElementById("errorM").value
+var errorElementing = document.getElementById("errorM").value
+
+
 
 try {
         var response = await fetch("/api/login", {
