@@ -29,8 +29,8 @@ a {
 }
 
 @keyframes marquee {
-  from { transform: translate(-50%, -50%) scale(1)}
-  to { transform: translate(-50%, -50%}
+  from { transform: translateX(100%)}
+  to { transform: translateX(-100%)}
 }
 
 h1 {
