@@ -94,7 +94,14 @@ await db.execute
 
 await db.execute
 (`
+    INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
+    (1, (SELECT user_id FROM Users WHERE username = "bobwalker"), "pending"),
+	(4, (SELECT user_id FROM Users WHERE username = "bobwalker"), "accepted"),
+    (5, (SELECT user_id FROM Users WHERE username = "davetruss"), "accepted");
+ `)
 
+ await db.execute
+(`
 `)
 
 }
