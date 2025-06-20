@@ -12,7 +12,8 @@ try {
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
             })
-          var dataplease = await response.json()
+
+            var dataplease = await response.json()
 
             if (dataplease.success)
             {
