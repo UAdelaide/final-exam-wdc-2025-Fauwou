@@ -1,7 +1,9 @@
 
 
 
-var username = document.getElementById("username")
+var username = document.getElementById("username").value
+var password = document.getElementById("password").value
+var username = document.getElementById("username").value
 
 try {
         var response = await fetch("/api/login", {
