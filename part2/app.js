@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 
 //everything below here added
-app.use(session({ //
+app.use(session({ //initialises the sessions
     secret: "your-stupid-secret-keytemporarytest",
     resave: false,
     saveUninitialized: true,
