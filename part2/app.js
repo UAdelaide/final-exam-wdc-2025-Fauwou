@@ -16,7 +16,8 @@ const userRoutes = require('./routes/userRoutes');
 //everything below here added
 app.use(session({
     resave: false,
-    saveUninitialized: true;
+    saveUninitialized: true,
+    cookie: {secure: false}
 }))
 
 app.post("/api/login", async function(req, res, next){
