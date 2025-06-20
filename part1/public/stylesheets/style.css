@@ -5,7 +5,8 @@ body {
   font-family: Comic Sans MS, cursive;
   animation: spin 5s linear infinite;
   position: relative;
-  
+  min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 a {
