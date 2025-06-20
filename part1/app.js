@@ -24,7 +24,12 @@ app.use(cookieParser());
 let db;
 /* this is somuch man*/
 
+(async function()
+{
 
+    
+
+})
 
 
 
