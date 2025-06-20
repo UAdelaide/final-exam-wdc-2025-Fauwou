@@ -40,7 +40,8 @@ app.use(session({
 }))
 
 
-app.post("/api/login", async function(req, res, next){
+app.post("/api/login", async function(req, res)
+{
  try {
     var { username, password } = req.body
 
