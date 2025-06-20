@@ -45,7 +45,10 @@
           try {
             var response = await fetch("/api/login", {
                 method: "POST",
-                headersL { "Content-Type" : "application/json" },
+                headers: { "Content-Type" : "application/json" },
+                body: JSON.stringify({
+                  username
+                })
             })
 
 
