@@ -25,7 +25,7 @@
         <p>Today's favourite dog is: {{dogName}}!</p>
         <p class="hidden-text">THIS IS LEGAL TEXT SAYING YOU'RE NOT ALLOWED TO DOWNLOAD OR SAVE ANY PHOTOS OR INFORMATION RELATED TO THESE WONDERFUL DOGS. YOU HAVE BEEN WARNED BY DogWalk&Co™!</p>
     </div>
-    
+
     <div class="buttonCONTAINER"> <!--  style="position:relative; top: 0; left: 0; flex-wrap: wrap;"-->
         <button @click="changeDog">NEW DOG OF DAY</button>
         <button @click="alert('WALK ME!')">WALK ME!</button>
@@ -47,7 +47,7 @@
             function changeDog()
             {
                 var dogs = [
-                    {image: "https://images.dog.ceo/breeds/pug/n02110958_14692.jpg", name: "SMUFFY"},
+                    {image: "", name: "SMUFFY"},
                     {image: "https://images.dog.ceo/breeds/dalmatian/cooper1.jpg", name: "SPOTTY MCSPOT"},
                     {image: "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg", name: "GOLDHENGA"},
                 ]
