@@ -18,12 +18,12 @@
         <img :src="dogImage" style="width: 100; height: 100%; object-fit: contain;">
     </div>
 
-    <div class="INFO-time" style="padding-top: -100px">
+    <div class="INFO-time" style="margin-top: -100px">
         <p>Today's favourite dog is: {{dogName}}!</p>
         <p class="hidden-text">THIS IS LEGAL TEXT SAYING YOU'RE NOT ALLOWED TO DOWNLOAD OR SAVE ANY PHOTOS OR INFORMATION RELATED TO THESE WONDERFUL DOGS. YOU HAVE BEEN WARNED BY DogWalk&Co™!</p>
     </div>
 
-    <div style=" position: fixed; top: 0; left: 0; display: flex; flex-wrap: wrap;">
+    <div style=" position:relative; top: 0; left: 0; display: flex; flex-wrap: wrap;">
         <button @click="changeDog">NEW DOG OF DAY</button>
         <button @click="alert('WALK ME!')">WALK ME!</button>
         <button @click="alert('FEED ME!')">FEED ME!</button>
