@@ -4,6 +4,8 @@ body {
   font: 14px;
   font-family: Comic Sans MS, cursive;
   animation: spin 5s linear infinite;
+  position: relative;
+  
 }
 
 a {
