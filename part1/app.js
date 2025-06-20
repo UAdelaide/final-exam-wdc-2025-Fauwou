@@ -3,7 +3,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
-var path = require('path')
 var mysql = require("mysql")
 
 var indexRouter = require('./routes/index');
@@ -33,7 +32,7 @@ let db;
             host: "localhost",
             user: "root",
             password: "",
-            multiplestatements: true
+            multipleStatements: true
         })
 
         var SQLGrabber = fs.readFileSync(
