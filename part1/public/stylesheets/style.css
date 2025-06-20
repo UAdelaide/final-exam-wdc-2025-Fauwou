@@ -1,13 +1,17 @@
 body {
   padding: 50px;
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-  
+  font: 14px;
   font-family: Comic Sans MS, cursive;
   animation: spin 5s linear infinite;
 }
 
 a {
   color: #00B7FF;
+}
+
+@keyframes spin {
+  0% {}
 }
 
 
