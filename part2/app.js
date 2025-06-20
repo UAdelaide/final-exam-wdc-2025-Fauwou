@@ -22,8 +22,10 @@ app.post("/api/login", async function(req, res, next){
     (
         `SELECT user_id, username, role FROM Users
         WHERE username = ? AND password_hash = ?`,
-        
+        [username, password]
     )
+
+    
 }
  catch (errorM) {
     console.error("da login fail forever:", errorM)
