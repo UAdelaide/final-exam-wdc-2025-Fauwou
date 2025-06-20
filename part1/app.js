@@ -58,19 +58,6 @@ let db;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*pre-existing info as sample/ current data*/
 
 async function dataTesting()
