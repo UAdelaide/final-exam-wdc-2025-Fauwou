@@ -38,6 +38,9 @@ a {
   40% { color: blue; }
   50% { color: green; }
   60% { color: yellow; }
+  70% { color: blue; }
+  80% { color: blue; }
+  90% { color: blue; }
   100% { color: purple; }
 }
 
