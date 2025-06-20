@@ -14,6 +14,10 @@ const userRoutes = require('./routes/userRoutes');
 
 
 //everything below here added
+app.use(session({
+    
+}))
+
 app.post("/api/login", async function(req, res, next){
  try {
     var { username, password } = req.body
@@ -25,7 +29,7 @@ app.post("/api/login", async function(req, res, next){
         [username, password]
     )
 
-    
+
 }
  catch (errorM) {
     console.error("da login fail forever:", errorM)
