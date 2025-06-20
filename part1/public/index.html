@@ -52,10 +52,13 @@
                 dogImage.value = randomDog.image
                 dogName.value = randomDog.name
             }
-            return
+            return {
+                dogImage,
+                dogName
+            }
         }
 
-    })
+    }).mount("app")
 </script>
 </body>
 </html>
