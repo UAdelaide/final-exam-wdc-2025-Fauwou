@@ -33,6 +33,6 @@ try {
 catch (errorM) { //catch error for if the login doesn't work
     errorElementing.textContent = "Login could not succeed because it failed. Try again."
     errorElementing.style.display = "block"
-    console.error("Failed logging in moment:", errorM)
+    //console.error("Failed logging in moment:", errorM)
           }
 })
