@@ -47,7 +47,7 @@ app.post("/api/login", async function(req, res, next){
     } else {
         res.status(401).json({
             success:false,
-            message: ""
+            message: "Bzzzt. wrong credentials inputted."
         })
     }
 }
