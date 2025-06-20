@@ -6,7 +6,7 @@ var username = document.getElementById("username").value
 var password = document.getElementById("password").value
 var errorElementing = document.getElementById("errorM").value
 
-
+errorElementing.style.display = "none"
 
 try {
         var response = await fetch("/api/login", {
