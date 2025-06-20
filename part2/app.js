@@ -40,14 +40,14 @@ app.post("/api/login", async function(req, res)//sends the login connection with
  try {
     var { username, password } = req.body
 
-    var [users] = await db.execute //checks username and user_id to 
+    var [users] = await db.execute //checks username and user_id from existing users to send to respective role
     (
         `SELECT user_id, username, role FROM Users
         WHERE username = ? AND password_hash = ?`,
         [username, password]
     )
 
-    if (users.length > 0)
+    if (users.length > 0) //checking they match their 
     {
         var usering = users[0]
         req.session.usering = {
