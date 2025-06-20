@@ -35,9 +35,10 @@ let db;
         })
     }
 
+    
 
     } catch (errorM) {
-        console.error
+        console.error("database setup did not finish:", errorM)
     }
 })
 
