@@ -22,8 +22,6 @@ app.use(cookieParser());
 
                                             /* DATABASE SECTION */
 let db;
-
-
 /* this is somuch man*/
 
 
