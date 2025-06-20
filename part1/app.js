@@ -40,6 +40,8 @@ let db;
 
 /*pre-existing info as sample/ current data*/
 
+async function dataTesting()
+{
 await db.execute
 (`
 
@@ -60,7 +62,7 @@ await db.execute
 
 `)
 
-
+}
 
 
 
