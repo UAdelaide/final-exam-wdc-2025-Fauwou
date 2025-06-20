@@ -27,7 +27,7 @@ try {
                 }
             } else {
                 errorElementing.textContent = "Wrong username or password inputted, thanks."
-                errorElementing.classList.remove("")
+                errorElementing.style.display = "block"
             }
           }
 catch (errorM) { //catch error for if the login doesn't work
