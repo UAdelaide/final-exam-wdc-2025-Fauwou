@@ -26,12 +26,12 @@ try {
                     window.location.href = "walker-dashboard.html"
                 }
             } else {
-                error.Element.textContent = "Wrong username or password inputted, thanks."
-                error.Element.classList.remove("")
+                errorElementing.textContent = "Wrong username or password inputted, thanks."
+                errorElementing.classList.remove("")
             }
           }
 catch (errorM) { //catch error for if the login doesn't work
-                errorElement.textContent = "Login could not succeed because it failed. Try again."
-                errorElement.classList.remove("")
+    errorElementing.textContent = "Login could not succeed because it failed. Try again."
+    errorElementing.classList.remove("")
           }
         })
