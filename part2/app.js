@@ -35,7 +35,7 @@ let db; //redeclaring database
     }
 })()
 
-app.post("/api/login", async function(req, res)//sends the login connection 
+app.post("/api/login", async function(req, res)//sends the login connection with database info back to page
 {
  try {
     var { username, password } = req.body
