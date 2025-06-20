@@ -26,8 +26,11 @@ let db;
 
 (async function()
 {
-
-    
+    try {
+        var connection = await mysql.createConnection({
+            
+        })
+    }
 
 })
 
