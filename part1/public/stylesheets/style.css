@@ -12,8 +12,7 @@ a {
 
 @keyframes spin {
   0% { transform: rotate(0deg)}
-  50% { transform: rotate(15deg)}
-  50% { transform: rotate(-15deg)}
+  50% { transform: rotate(-5deg)}
 }
 
 
