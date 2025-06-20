@@ -17,6 +17,12 @@ const userRoutes = require('./routes/userRoutes');
 //everything below here added
 let db;
 
+(async function() {
+    try {
+        
+    }
+})
+
 app.use(session({
     resave: false,
     saveUninitialized: true,
