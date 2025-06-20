@@ -5,15 +5,6 @@ const app = express();
 const mysql = require("mysql2/promise")
 const session = require("express-session") //added this
 
-// Middleware
-app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
-
-// Routes
-const walkRoutes = require('./routes/walkRoutes');
-const userRoutes = require('./routes/userRoutes');
-
-
 //everything below here added
 let db;
 
