@@ -25,7 +25,7 @@ try {
                 } else {
                     window.location.href = "walker-dashboard.html" //redirecting to walker if not owner, but still valid
                 }
-            } else {
+            } else { //if all is incorrect, displays error
                 errorElementing.textContent = "Wrong username or password inputted, thanks."
                 errorElementing.style.display = "block"
             }
