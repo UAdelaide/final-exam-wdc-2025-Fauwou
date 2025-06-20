@@ -9,7 +9,7 @@ var errorElementing = document.getElementById("errorM").value
 errorElementing.style.display = "none"
 
 try {
-        var response = await fetch("/api/login", {
+        var response = await fetch("/api/login", {//
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
