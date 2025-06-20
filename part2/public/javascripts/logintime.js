@@ -21,7 +21,7 @@ try {
             {
                 if (dataplease.role === "owner") //checks if owner was found in the response
                 {
-                    window.location.href = "./owner-dashboard.html" //redirecting to owner if so
+                    window.location.href = "/owner-dashboard.html" //redirecting to owner if so
                 } else if (dataplease.role === "walker") {
                     window.location.href = "/walker-dashboard.html" //redirecting to walker if not owner, but still valid
                 }
