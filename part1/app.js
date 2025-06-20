@@ -5,8 +5,10 @@ var logger = require('morgan');
 var fs = require('fs');
 var mysql = require("mysql")
 
+/*
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+*/
 
 var app = express();
 
