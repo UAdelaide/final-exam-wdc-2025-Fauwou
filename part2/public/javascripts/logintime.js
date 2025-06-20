@@ -21,7 +21,10 @@
             })
           var dataplease = await response.json()
 
-            if (result)
+            if (dataplease.success)
+            {
+                if (dataplease.role === "owner")
+            }
 
           }
           catch (errorM) { //catch error for if the login doesn't work
