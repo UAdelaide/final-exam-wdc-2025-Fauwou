@@ -46,14 +46,12 @@
             var response = await fetch("/api/login", {
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
-                body: JSON.stringify({
-                  username: this.username,
-                  password: this.password
+                body: JSON.stringify({ username, password: this.password
                 })
             })
           var dataplease = await response.json()
 
-            
+
           }
           catch (errorM) { //catch error for if the login doesn't work
             this.error = "Login could not succeed because it failed."
