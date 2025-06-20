@@ -2,7 +2,7 @@ document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){
     SENDITNOW.preventDefault()
 
-var username = document.getElementById("username").value
+var username = document.getElementById("username").value //gets the relevant 
 var password = document.getElementById("password").value
 var errorElementing = document.getElementById("errorM").value
 
