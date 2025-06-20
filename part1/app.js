@@ -34,6 +34,7 @@ let db;
             multiplestatements: true
         })
 
+        var SQLGrabber = fs.
 
 
     await dataTesting() /* please work as well later */
