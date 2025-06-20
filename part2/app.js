@@ -40,7 +40,10 @@ app.post("/api/login", async function(req, res, next){
             username: usering.username,
             role: usering.role
         }
-        res.json
+        res.json({
+            success:true,
+            role: usering.role
+        })
     }
 }
  catch (errorM) {
