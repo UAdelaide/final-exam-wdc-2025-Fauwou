@@ -3,7 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
-var mysql = require("mysql")
+var mysql = require("mysql2")
 
 /*
 var indexRouter = require('./routes/index');
