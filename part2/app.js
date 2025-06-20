@@ -18,9 +18,9 @@ app.use(session({ //
     cookie: {secure: false}
 }))
 
-let db;
+let db; //redeclaring database
 
-(async function() {
+(async function() { //syncs the database to be connected with this version of app.js
     try {
         db = await mysql.createConnection({
             host: "localhost",
