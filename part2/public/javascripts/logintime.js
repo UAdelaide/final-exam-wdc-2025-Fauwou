@@ -9,13 +9,13 @@ var errorElementing = document.getElementById("errorM").value
 errorElementing.style.display = "none"
 
 try {
-        var response = await fetch("/api/login", {//
+        var response = await fetch("/api/login", {//getting the responded with information from login
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
             })
 
-            var dataplease = await response.json()
+            var dataplease = await response.json()//putting the response into a json
 
             if (dataplease.success)
             {
