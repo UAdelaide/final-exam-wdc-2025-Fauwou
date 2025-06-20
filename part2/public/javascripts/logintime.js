@@ -1,5 +1,7 @@
 document.getElementById("loginFormz").addEventListener("submit"),
-async function(SENDITNOW)
+async function(SENDITNOW){
+    
+}
 
 
 var username = document.getElementById("username").value
