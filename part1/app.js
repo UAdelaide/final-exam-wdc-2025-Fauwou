@@ -106,7 +106,7 @@ await db.execute
     (4, (SELECT user_id FROM Users WHERE username = "bobwalker"),
         (SELECT owner_id FROM Dogs Where dog_id = (SELECT dog_id FROM Walk Requests WHERE request_id = 4)),
         5, "FANTASTIC!"),
-    
+    (5, (SELECT user_id FROM Users WHERE username))
 `)
 
 }
