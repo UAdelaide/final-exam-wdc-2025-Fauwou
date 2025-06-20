@@ -35,7 +35,10 @@ let db;
         })
     }
 
-    
+
+    } catch (errorM) {
+        console.error
+    }
 })
 
 
