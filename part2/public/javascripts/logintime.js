@@ -27,7 +27,7 @@
                 {
                     window.location.href = "owner-dashboard.html"
                 } else {
-                    
+                    window.location.href = "walker-dashboard.html"
                 }
             }
 
