@@ -20,7 +20,10 @@ app.post("/api/login", async function(req, res,next){
 
 }
  catch (errorM) {
-    console.error("da login fail forever:")
+    console.error("da login fail forever:", errorM)
+    res.status(500).json({
+        
+    })
  }
 })
 
