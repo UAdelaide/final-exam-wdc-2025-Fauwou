@@ -2,6 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-family: Comic Sans MS, cursive;
+  animation: spin 5s linear infinite;
 }
 
 a {
