@@ -66,7 +66,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
         })
     }
 }
- catch (errorM) {//
+ catch (errorM) {//error catcher 
     console.error("da login fail forever:", errorM)
     res.status(500).json({
         success: false,
