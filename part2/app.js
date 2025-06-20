@@ -27,7 +27,9 @@ let db;
         })
         console.log("Database 2nd time connected please")
     }
-    catch
+    catch (errorM) {
+        console.error("this database hates you:", errorM)
+    }
 })
 
 app.use(session({
