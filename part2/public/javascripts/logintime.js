@@ -23,7 +23,7 @@ try {
                 {
                     window.location.href = "owner-dashboard.html" //redirecting to owner if so
                 } else {
-                    window.location.href = "walker-dashboard.html"
+                    window.location.href = "walker-dashboard.html" //redirecting to walker if not owner, but still valid
                 }
             } else {
                 errorElementing.textContent = "Wrong username or password inputted, thanks."
