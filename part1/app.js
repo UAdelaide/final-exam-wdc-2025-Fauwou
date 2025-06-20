@@ -60,7 +60,7 @@ await db.execute
 `)
 
 
-
+/*this is taking so long, im losing my mind */
 /* da routing timeees */
 app.get("/api/dogs", async function(req, res, next)
 {
