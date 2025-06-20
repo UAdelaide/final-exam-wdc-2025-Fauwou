@@ -39,6 +39,11 @@ let db;
 
 
 /*pre-existing info as sample/ current data*/
+await dataTesting() /* please work */
+{ catch (errorM) {
+    console.error("database setup error:", errrorM)
+  }
+})()
 
 async function dataTesting()
 {
