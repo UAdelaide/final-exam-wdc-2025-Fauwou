@@ -13,6 +13,10 @@ const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
 
+//everything below here added
+app.post("")
+
+
 
 
 
