@@ -11,7 +11,7 @@
         };
       },
       methods: {
-        
+
         async LOGINNOW() { //login function prepared to run on click
           try {
             var response = await fetch("/api/login", {
@@ -21,6 +21,7 @@
             })
           var dataplease = await response.json()
 
+            if (result)
 
           }
           catch (errorM) { //catch error for if the login doesn't work
