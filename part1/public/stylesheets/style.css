@@ -32,8 +32,8 @@ a {
 
 @keyframes marqueecolorChange {
   0% { color: red; }
-  10% { color: blue; }
-  20% { color: blue; }
+  10% { color: rgb(255, 0, 89); }
+  20% { color: rgb(0, 255, 0); }
   30% { color: blue; }
   40% { color: blue; }
   50% { color: green; }
