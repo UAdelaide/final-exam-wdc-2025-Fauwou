@@ -44,6 +44,8 @@ app.post("/api/login", async function(req, res, next){
             success:true,
             role: usering.role
         })
+    } else {
+        res.status(401).json({})
     }
 }
  catch (errorM) {
