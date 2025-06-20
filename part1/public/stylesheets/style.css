@@ -87,6 +87,7 @@ h1 {
   background-color: red;
   white-space: nowrap;
   animation: marquee 10s linear infinite;
+  animation: marqueecolorChange 10s linear infinite;
 }
 
 .INFO-time {
