@@ -16,8 +16,9 @@ app.use(cookieParser());
 
 
 
-/* DATABASE SECTION */
+                                            /* DATABASE SECTION */
 let db;
+
 
 
 
@@ -58,6 +59,9 @@ await db.execute
 (`
 
 `)
+
+
+
 
 
 /*this is taking so long, im losing my mind */
