@@ -52,9 +52,10 @@ let db;
 
     await dataTesting() /* please work as well later */
     console.log("Finally! Connected to DogWalkService.")
-    
+
     } catch (errorM) {
         console.error("database setup did not finish:", errorM)
+        process.exit(1)
     }
 })()
 
