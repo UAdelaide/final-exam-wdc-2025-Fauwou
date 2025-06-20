@@ -30,13 +30,14 @@ let db;
     catch (errorM) {
         console.error("this database hates you:", errorM)
     }
-})
+})()
 
 app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {secure: false}
 }))
+
 
 app.post("/api/login", async function(req, res, next){
  try {
