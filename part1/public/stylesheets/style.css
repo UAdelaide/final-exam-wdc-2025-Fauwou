@@ -15,6 +15,9 @@ a {
   50% { transform: rotate(-5deg)}
 }
 
+@keyframes bounce (
+  from { transform: translate(-50%)}
+)
 .
 
 
