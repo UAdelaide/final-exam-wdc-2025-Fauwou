@@ -40,7 +40,10 @@ let db;
 
 
 
+await db.execute
+(`
 
+`)
 
 
 
