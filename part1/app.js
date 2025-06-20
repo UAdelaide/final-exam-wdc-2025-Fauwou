@@ -29,11 +29,13 @@ let db;
     try {
         var connection = await mysql.createConnection({
             host: "localhost",
-            user: "root"
-            
+            user: "root",
+            password: "",
+            multiplestatements: true
         })
     }
 
+    
 })
 
 
