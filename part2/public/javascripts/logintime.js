@@ -2,11 +2,11 @@ document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){
     SENDITNOW.preventDefault()
 
-var username = document.getElementById("username").value //gets the relevant 
+var username = document.getElementById("username").value //gets the relevant variables from the login
 var password = document.getElementById("password").value
 var errorElementing = document.getElementById("errorM").value
 
-errorElementing.style.display = "none"
+errorElementing.style.display = "none"//hides error message
 
 try {
         var response = await fetch("/api/login", {//getting the responded with information from login
