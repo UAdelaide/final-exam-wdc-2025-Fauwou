@@ -47,7 +47,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
         [username, password]
     )
 
-    if (users.length > 0) //checking they match their 
+    if (users.length > 0) //checking they match their respective column in the database
     {
         var usering = users[0]
         req.session.usering = {
@@ -55,7 +55,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
             username: usering.username,
             role: usering.role
         }
-        res.json({
+        res.json({ //checks with the login via 
             success:true,
             role: usering.role
         })
