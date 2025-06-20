@@ -93,6 +93,11 @@ button {
   cursor: pointer;
   border-radius: 50%;
   animation: pulse 2s infinite;
+  white-space: nowrap;
+}
+
+.button-container {
+
 }
 
 .hidden-text {
