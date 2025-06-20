@@ -30,9 +30,9 @@ a {
   100% { color: purple; }
 }
 
-@keyframes marqueecolorChange {
+@keyframes textcolorChange {
   0% { color: rgb(255, 0, 0); }
-  100% { color: rgb(128, 0, 128); }
+  100% { color: rgb(255, 255, 0); }
 }
 
 @keyframes marquee {
