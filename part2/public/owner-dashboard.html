@@ -151,6 +151,7 @@
               var doghouseReceives = await fetch("/api/ownersdogs", {
                 headers: { "Content-Type" : "application/json"}
               })
+              ownersDoggies.value = await doghouseReceives.json()
               
 
 
