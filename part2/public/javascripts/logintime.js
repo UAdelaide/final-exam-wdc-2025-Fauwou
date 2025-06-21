@@ -1,4 +1,4 @@
-const { response } = require("../../app")
+const { response, get } = require("../../app")
 
 document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){//calls for the form info
@@ -51,7 +51,7 @@ async function DOGDISPLAY()
 
         for (var dog of dogs)
         {
-            
+            var URLPHOTO = await 
         }
 
     } catch (errorM) {
