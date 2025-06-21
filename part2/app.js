@@ -124,7 +124,10 @@ app.get("/api/ownersdogs", async function(req,res)
 
 app.get("/api/users/me", async function(req,res)
 {
-    if (!req.session.)
+    if (!req.session.usering)
+    {
+        
+    }
 })
 
 // Routes
