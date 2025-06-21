@@ -137,7 +137,7 @@ app.get("/api/users/me", async function(req,res) //sets up an api access point t
 
 
 //from the PART 1 section
-app.get("/api/dogs", async function(req, res, next) //
+app.get("/api/dogs", async function(req, res, next) //sets up an access point to retrieve dog information and their owners (and their info)
 {
   try {
    var [dogs] = await db.execute
@@ -148,7 +148,7 @@ app.get("/api/dogs", async function(req, res, next) //
     `)
     res.json(dogs)
   }
-  catch (errorM) {
+  catch (errorM) { // error catching it if it doesn't pass to begin with
     res.status(500).json({ error: "No dogs found in these lands." })
   }
 })
