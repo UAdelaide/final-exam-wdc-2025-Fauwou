@@ -51,7 +51,7 @@
         //const user = 3;
         const userTiming = ref() // declaring variable for users to slot as
 
-        async function SELECTCurrentUSER()
+        async function SELECTCurrentUSER() //selects the current user logged in from database info
         {
           try {
               var userGrabber = await fetch("/api/users/me")
