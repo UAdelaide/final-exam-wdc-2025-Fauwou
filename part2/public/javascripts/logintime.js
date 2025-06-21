@@ -58,7 +58,9 @@ async function DOGDISPLAY()
              <td>${dog_id}</td>
              <td>${dog.name}</td>
              <td>${dog.size}</td>
-             <td>${dog.owner_id}</td>`
+             <td>${dog.owner_id}</td>
+             <td><img src="${URLPHOTO}" class="doggy-photoing"></td>
+             `
         }
 
     } catch (errorM) {
