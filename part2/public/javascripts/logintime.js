@@ -49,9 +49,10 @@ async function DOGDISPLAY()
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
 
-        for (var dog of dogs)
+        for (var dog of doggies)
         {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
+            
         }
 
     } catch (errorM) {
