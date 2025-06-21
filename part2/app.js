@@ -80,9 +80,9 @@ app.post("/api/logout", async function(req, res) //sets up an existing post for 
 {
     req.session.destroy(function(errorM) //asks for destruction of current session
     {
-    if (errorM) { //checks for it to pass
+    if (errorM) { //checks for it to pass, if it fails it runs below
         console.error("we failed to log you out at this time:", errorM)
-        return res.status(500).json({ //returns a 
+        return res.status(500).json({ //returns an error json to other files if
             success: false,
             message: "login no work"
                 })
