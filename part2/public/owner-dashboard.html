@@ -124,8 +124,9 @@
         async function logout() {
           try {
             var responsivething = await fetch("/api/logout", {
-              
-            }
+              method: "POST"
+            })
+            
           }
            catch (errorM) {
             error.value = "WOW AN ERROR OCCURRED"
