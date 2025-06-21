@@ -75,9 +75,9 @@ async function DOGPHOTOFIND()
     try {
         var OrganisingSize =
         {
-            small:
-            medium:
-            large:
+            small: "https://dog.ceo/api/breeds/image/random"
+            medium: "https://dog.ceo/api/breeds/image/random"
+            large: "https://dog.ceo/api/breed/mastiff/images/random"
         }
 
     } catch (errorM) {
