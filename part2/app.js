@@ -102,7 +102,7 @@ app.get("/api/ownersdogs", async function(req,res)
     try {
         if (!req.session.usering || req.session.usering.role !== "owner")
             {
-                
+                return res.status(403)
          }
         {
             var [dogs] = await db.execute
