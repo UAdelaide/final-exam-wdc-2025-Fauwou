@@ -159,7 +159,7 @@
 
         onMounted(() => {
           loadWalks();
-          loadingWhoLetTheDogsIn()
+          loadingWhoLetTheDogsIn() //mounts the function calling for the dogs from the database
         });
 
         return {
@@ -167,7 +167,7 @@
           walks,
           message,
           error,
-          ownersDoggies,
+          ownersDoggies, //returns the array
           logout, //returns the logout value
           submitWalkRequest
         };
