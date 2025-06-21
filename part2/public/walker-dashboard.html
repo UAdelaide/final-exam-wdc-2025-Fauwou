@@ -54,9 +54,9 @@
         async function SELECTCurrentUSER() //selects the current user logged in from database info
         {
           try {
-              var userGrabber = await fetch("/api/users/me")
+              var userGrabber = await fetch("/api/users/me") //fetches the respective user
               if (userGrabber.status !== 200) {
-                throw new Error("we no get user data")
+                throw new Error("we no get user data") //throws an error if the data isn't 
               }
               userTiming.value = await userGrabber.json()
           } catch (errorM) {
