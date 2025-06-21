@@ -44,8 +44,8 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
         var callingidea = await fetch("/api/dogs") //fetches via app.js for dog tied info
         if (!callingidea.ok) throw new Error("did get no dogs here") //checks it
 
-        var doggies = await callingidea.json() //saves it 
-        console.log("Dogs received, over.", doggies)
+        var doggies = await callingidea.json() //saves it to a json
+        console.log("Dogs received, over.", doggies) //logs it if it passes
 
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
