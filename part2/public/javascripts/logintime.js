@@ -85,5 +85,6 @@ async function DOGPHOTOFIND()
         return valuabledogdata.message
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
+        return ""
     }
 }
