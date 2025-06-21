@@ -81,8 +81,8 @@ async function DOGPHOTOFIND()
         }
 
         var photoResponding = await fetch() //wait
-        var valuabledogdata = await response.json
-
+        var valuabledogdata = await response.json()
+        return valuabledogdata.message
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
