@@ -85,6 +85,6 @@ async function DOGPHOTOFIND()
         return valuabledogdata.message
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
-        return ""
+        return "https://images.dog.ceo/breeds/affenpinscher/n02110627_11614.jpg"
     }
 }
