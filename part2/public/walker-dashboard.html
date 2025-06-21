@@ -56,9 +56,9 @@
           try {
               var userGrabber = await fetch("/api/users/me") //fetches the respective user
               if (userGrabber.status !== 200) {
-                throw new Error("we no get user data") //throws an error if the data isn't 
+                throw new Error("we no get user data") //throws an error if the data isn't precisely accessible and runs fine
               }
-              userTiming.value = await userGrabber.json()
+              userTiming.value = await userGrabber.json() //to a json
           } catch (errorM) {
             error.value = errorM.message
           }
