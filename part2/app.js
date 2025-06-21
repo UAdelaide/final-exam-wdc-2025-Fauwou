@@ -100,7 +100,7 @@ app.post("/api/logout", async function(req, res) //sets up a facet for the api t
 app.get("/api/ownersdogs", async function(req,res)
 {
     try {
-        if (!req.session.usering || req)
+        if (!req.session.usering || req.session.usering.role !== "owner")
         {
 
             var [dogs] = await db.execute
