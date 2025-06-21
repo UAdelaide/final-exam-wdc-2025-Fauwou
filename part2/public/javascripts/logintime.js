@@ -80,7 +80,7 @@ async function DOGPHOTOFIND()
             large: "https://dog.ceo/api/breed/mastiff/images/random"
         }
 
-        var photoResponding = await
+        var photoResponding = await fetch()
 
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
