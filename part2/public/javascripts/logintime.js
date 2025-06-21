@@ -1,5 +1,3 @@
-const { response, get } = require("../../app")
-
 document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){//calls for the form info
     SENDITNOW.preventDefault() //stops autoredirecting upon running
