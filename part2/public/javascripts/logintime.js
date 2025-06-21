@@ -59,7 +59,7 @@ async function DOGDISPLAY()
              <td>${dog.dog_id}</td>
              <td>${dog.name}</td>
              <td>${dog.size}</td>
-             <td>${dog.owner_id}</td>
+             <td>${dog.owner_name}</td>
              <td><img src="${URLPHOTO}" class="dog-photoing"></td>
              `
             DogListing.appendChild(rowing)
