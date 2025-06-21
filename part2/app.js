@@ -106,7 +106,8 @@ app.get("/api/ownersdogs", async function(req,res)
             var [dogs] = await db.execute
             (
                 `SELECT dog_id, name FROM Dogs
-                `
+                 WHERE owner_id = ?`,
+                 
             )
         }
 
