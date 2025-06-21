@@ -55,7 +55,9 @@
         {
           try {
               var userGrabber = await fetch("/api/users/me")
-              if (response)
+              if (userGrabber.status !== 200) {
+
+              }
 
               userTiming.value = await userGrabber.json()
           } catch (errorM) {
