@@ -64,7 +64,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
              `
             DogListing.appendChild(rowing) //adds it to the <tr> tag within the table
             } catch (errorP) {
-                console.error("photo of dog no come yet", errorP)
+                console.error("photo of dog no come yet", errorP) //catches it
             }
         }
 
