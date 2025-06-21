@@ -9,7 +9,7 @@
 </head>
 <body class="bg-light">
   <div id="app" class="container py-4">
-    
+
     <header class="mb-4 align-items-center justify-content-between d-flex"> <!--put the log out button inside a shared header with the header text-->
       <h1 class="mb-0 text-success">Walker Dashboard</h1>
       <button @click="logout" class="btn btn-danger">Log Out</button>
@@ -79,6 +79,28 @@
           }
         }
 
+        async function logout() {
+          try {
+            var responsivething = await fetch("/api/logout",
+            {
+              method: "POST"
+            })
+            var eventoutcome = await responsivething.json()
+
+
+            if (eventoutcome.success)
+            {
+              window.location.href = "/index.html"
+            } else
+              {
+                error.value = eventoutcome.message || "Logout sucked, not work"
+            }
+          }
+           catch (errorM) {
+            error.value = "WOW AN ERROR OCCURRED"
+          }
+        }
+
         onMounted(() => {
           loadWalkRequests();
         });
@@ -87,6 +109,7 @@
           walks,
           message,
           error,
+          logout,
           applyToWalk
         };
       }
