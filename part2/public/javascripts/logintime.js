@@ -54,7 +54,10 @@ async function DOGDISPLAY()
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
             var rowing = document.createElement("tr")
             rowing.innerHTML =
-            `<td>   <img src="${URLPHOTO}" class="doggy-photoing"></td>`
+            `<td>   <img src="${URLPHOTO}" class="doggy-photoing"></td>
+             <td></td>
+             <td></td>
+             <td></td>`
         }
 
     } catch (errorM) {
