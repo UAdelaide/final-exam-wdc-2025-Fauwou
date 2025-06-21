@@ -101,9 +101,9 @@ app.get("/api/ownersdogs", async function(req,res)
 {
     try {
         if (!req.session.usering || req.session.usering.role !== "owner")
-            {
-                return res.status(403).json({ error: ""})
-         }
+                 {
+                return res.status(403).json({ error: "not available, go away"})
+                 }
         {
             var [dogs] = await db.execute
             (
