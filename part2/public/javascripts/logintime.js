@@ -1,3 +1,5 @@
+const { response } = require("../../app")
+
 document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){//calls for the form info
     SENDITNOW.preventDefault() //stops autoredirecting upon running
@@ -42,7 +44,8 @@ async function DOGDISPLAY()
 {
     try {
         var callingidea = await fetch("/api/dogs")
-        var doggies = 
+        var doggies = await response.json
+        
     } catch (errorM) {
         console.error{"womp womp, no dogs today:", errorM}
     }
