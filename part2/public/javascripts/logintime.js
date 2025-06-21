@@ -77,7 +77,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
 
 }
 
-async function DOGPHOTOFIND(size)
+async function DOGPHOTOFIND(size) 
 {
     try {
         var OrganisingSize =
