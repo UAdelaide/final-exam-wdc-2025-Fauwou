@@ -1,6 +1,6 @@
 document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){//calls for the form info
-    SENDITNOW.preventDefault() //stops autoredirecting
+    SENDITNOW.preventDefault() //stops autoredirecting upon running
 
 var username = document.getElementById("username").value //gets the relevant variables from the login
 var password = document.getElementById("password").value
