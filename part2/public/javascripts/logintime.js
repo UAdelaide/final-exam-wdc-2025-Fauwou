@@ -89,4 +89,4 @@ async function DOGPHOTOFIND()
     }
 }
 
-document.addEventListener("DOMContentLoaded",)
+document.addEventListener("DOMContentLoaded", DOGDISPLAY)
