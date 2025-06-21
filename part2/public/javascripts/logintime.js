@@ -63,7 +63,9 @@ async function DOGDISPLAY()
              <td><img src="${URLPHOTO}" class="dog-photoing"></td>
              `
             DogListing.appendChild(rowing)
-            } catch 
+            } catch (errorP) {
+                console.error
+            }
         }
 
 
