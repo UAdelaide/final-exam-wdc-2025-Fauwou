@@ -91,7 +91,7 @@ async function DOGPHOTOFIND(size) //across three sizes, fetches relevant photos 
         var valuabledogdata = await photoResponding.json() //stores the photo into a json
         return valuabledogdata.message //sends a response of the message
     } catch (errorM) {
-        console.error("womp womp, no dogs today:", errorM)
+        console.error("womp womp, no dogs today:", errorM)//catches in case any errors occur
         return "https://images.dog.ceo/breeds/affenpinscher/n02110627_11614.jpg"
     }
 }
