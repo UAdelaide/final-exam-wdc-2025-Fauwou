@@ -83,10 +83,11 @@ app.post("/api/logout", async function(req, res) {
         return res.status(500).json({
             success: false,
             message: "login no work"
-        })
+                })
+        }
         res.clearCookie("connect.sid")
-        
-    }
+
+
   })
 })
 
