@@ -1,6 +1,6 @@
 document.getElementById("formingLOGIN").addEventListener("submit",
 async function(SENDITNOW){//calls for the form info
-    SENDITNOW.preventDefault() //stops autoredirecting if an error is present
+    SENDITNOW.preventDefault() //stops autoredirecting
 
 var username = document.getElementById("username").value //gets the relevant variables from the login
 var password = document.getElementById("password").value
@@ -9,7 +9,7 @@ var errorElementing = document.getElementById("errorMessaging")
 errorElementing.style.display = "none"//hides error message
 
 try {
-        var response = await fetch("/api/login", {//getting the responded with information from login-form
+        var response = await fetch("/api/login", {//getting it responded with information from login-form
                 method: "POST",
                 headers: { "Content-Type" : "application/json" },
                 body: JSON.stringify({ username, password})
