@@ -78,7 +78,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 
 app.post("/api/logout", async function(req, res)
 {
-    req.session.destroy(function(errorM)
+    req.session.destroy(function(errorM) {
     if (errorM) {
 
     }
