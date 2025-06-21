@@ -145,14 +145,14 @@
           }
         }
 
-        async function loadingWhoLetTheDogsIn() //creates a fetch function 
+        async function loadingWhoLetTheDogsIn() //creates a fetch function for the dogs to their respective owner to be grabbed from the database
         {
           try {
               var doghouseReceives = await fetch("/api/ownersdogs", {
                 headers: { "Content-Type" : "application/json"}
               })
               ownersDoggies.value = await doghouseReceives.json()
-          } catch (errorM) {
+          } catch (errorM) { //error catcher to check 
               error.value = "the dogs did not want to come in today"
           }
         }
