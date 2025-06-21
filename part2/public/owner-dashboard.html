@@ -30,7 +30,7 @@
             <select v-model="form.dog_id" class="form-select" required>
               <option disabled value="">YOUR DOGGIES!!!</option>
               <option v-for="dog in ownersDoggies" :value="dog.dog_id" :key="dog.dog_id"> {{ dog.name }} </option>
-              <!--vue statement that loops through database for dog_ids and relevantly connected usernames-->
+              <!--vue statement that loops through database for dog_ids and relevantly connected usernames, aka, their owners-->
             </select>
             <!--<input v-model="form.dog_id" type="number" class="form-control" required>-->
           </div>
