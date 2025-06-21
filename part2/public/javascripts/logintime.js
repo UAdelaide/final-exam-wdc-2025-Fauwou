@@ -88,3 +88,5 @@ async function DOGPHOTOFIND()
         return "https://images.dog.ceo/breeds/affenpinscher/n02110627_11614.jpg"
     }
 }
+
+document.addEventListener("DOMContentLoaded",)
