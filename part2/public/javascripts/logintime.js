@@ -64,7 +64,7 @@ async function DOGDISPLAY()
              `
             DogListing.appendChild(rowing)
             } catch (errorP) {
-                console.error
+                console.error("photo of dog no come yet", errorP)
             }
         }
 
