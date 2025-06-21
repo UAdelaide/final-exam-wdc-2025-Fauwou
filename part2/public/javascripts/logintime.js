@@ -75,10 +75,12 @@ async function DOGPHOTOFIND()
     try {
         var OrganisingSize =
         {
-            small: "https://dog.ceo/api/breeds/image/random"
-            medium: "https://dog.ceo/api/breeds/image/random"
+            small: "https://dog.ceo/api/breeds/image/random",
+            medium: "https://dog.ceo/api/breeds/image/random",
             large: "https://dog.ceo/api/breed/mastiff/images/random"
         }
+
+        var photoResponding = await
 
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
