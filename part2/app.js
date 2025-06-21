@@ -87,7 +87,7 @@ app.post("/api/logout", async function(req, res) //sets up an existing post for 
             message: "login no work"
                 })
         }
-        res.clearCookie("connect.sid")
+        res.clearCookie("connect.sid") //clears the cookie
         res.json
         ({
             success: true,
