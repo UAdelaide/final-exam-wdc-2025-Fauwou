@@ -64,6 +64,7 @@ async function DOGDISPLAY()
             DogListing.appendChild(rowing)
         }
 
+        document.getElementById("DOGGYT")
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
