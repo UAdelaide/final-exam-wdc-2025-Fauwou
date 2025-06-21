@@ -122,9 +122,9 @@ app.get("/api/ownersdogs", async function(req,res)
 })
 
 
-app.get("/api/users/me", async function(req,res)
+app.get("/api/users/me", async function(req,res) //sets up an api access point through users
 {
-    if (!req.session.usering)
+    if (!req.session.usering) //checks if the req 
     {
         return res.status(401).json({ error:"check again, you broke something"})
     }
