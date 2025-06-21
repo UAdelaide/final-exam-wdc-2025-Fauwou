@@ -52,6 +52,7 @@ async function DOGDISPLAY()
 
         for (var dog of doggies)
         {
+            try {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
             var rowing = document.createElement("tr")
             rowing.innerHTML = `
@@ -62,6 +63,7 @@ async function DOGDISPLAY()
              <td><img src="${URLPHOTO}" class="dog-photoing"></td>
              `
             DogListing.appendChild(rowing)
+            } catch 
         }
 
 
@@ -70,7 +72,7 @@ async function DOGDISPLAY()
     }
     document.getElementById("TABLEFORDOGS").style.display = "block"
 
-} 
+}
 
 async function DOGPHOTOFIND(size)
 {
