@@ -51,7 +51,7 @@ async function DOGDISPLAY()
 
         for (var dog of dogs)
         {
-            var URLPHOTO = await 
+            var URLPHOTO = await DOGPHOTOFIND(dog.size)
         }
 
     } catch (errorM) {
