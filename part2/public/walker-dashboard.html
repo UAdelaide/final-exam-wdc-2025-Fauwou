@@ -65,7 +65,7 @@
 
         async function loadWalkRequests() {
           try {
-            await getCurrentUser()
+            await getCurrentUser() //waits for user to be grabbed first before loading the requsts
             const res = await fetch('/api/walks');
             if (!res.ok) throw new Error('Failed to load walk requests');
             walks.value = await res.json();
