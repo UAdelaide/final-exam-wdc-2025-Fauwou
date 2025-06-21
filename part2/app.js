@@ -122,7 +122,7 @@ app.get("/api/ownersdogs", async function(req,res)
 })
 
 
-app.get("")
+app.get("/api/users/me", ")
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
