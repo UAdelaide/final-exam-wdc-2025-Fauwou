@@ -42,7 +42,7 @@ async function DOGDISPLAY()
 {
     try {
         var callingidea = await fetch("/api/dogs")
-        var doggies = await callingidea.json
+        var doggies = await callingidea.json()
 
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
