@@ -86,6 +86,7 @@ app.post("/api/logout", async function(req, res) {
                 })
         }
         res.clearCookie("connect.sid")
+        res.json({})
 
 
   })
