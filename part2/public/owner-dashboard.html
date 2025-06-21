@@ -126,7 +126,10 @@
             var responsivething = await fetch("/api/logout", {
               method: "POST"
             })
-            
+            var eventoutcome = await responsivething.json()
+
+
+            if (resp)
           }
            catch (errorM) {
             error.value = "WOW AN ERROR OCCURRED"
