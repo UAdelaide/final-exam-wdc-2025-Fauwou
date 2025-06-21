@@ -76,7 +76,9 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 })
 
 
-express.application.post()
+express.application.post("/api/logout", async function(req, res)
+
+)
 
 
 
