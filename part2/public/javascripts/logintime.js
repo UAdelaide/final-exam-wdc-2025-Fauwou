@@ -50,7 +50,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
         var DogListing = document.getElementById("DOGGYLIST") //gets the id for the list to be modified and inputted
         DogListing.innerHTML = ""
 
-        for (var dog of doggies)
+        for (var dog of doggies) //loops through each registered dog and applies the same information across it all
         {
             try {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
