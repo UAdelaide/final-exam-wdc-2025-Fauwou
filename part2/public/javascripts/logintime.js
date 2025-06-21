@@ -46,6 +46,8 @@ async function DOGDISPLAY()
         var callingidea = await fetch("/api/dogs")
         var doggies = await response.json
 
+        
+
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
