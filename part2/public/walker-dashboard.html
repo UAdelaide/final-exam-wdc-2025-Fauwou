@@ -81,7 +81,7 @@
 
         async function logout() {
           try {
-            var responsivething = await fetch("/api/logout",
+            var responsivething = await fetch("/api/logout", //goes through the api
             {
               method: "POST"
             })
@@ -96,7 +96,7 @@
                 error.value = eventoutcome.message || "Logout sucked, not work"
             }
           }
-           catch (errorM) { //if something malfunctions or an error 
+           catch (errorM) { //if something malfunctions or breaks, error checks
             error.value = "WOW AN ERROR OCCURRED"
           }
         }
