@@ -104,7 +104,6 @@ app.get("/api/ownersdogs", async function(req,res)
                  {
                 return res.status(403).json({ error: "not available, go away"})
                  }
-        {
             var [dogs] = await db.execute
             (
                 `SELECT dog_id, name FROM Dogs
