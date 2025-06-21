@@ -80,7 +80,7 @@ async function DOGPHOTOFIND()
             large: "https://dog.ceo/api/breed/mastiff/images/random"
         }
 
-        var photoResponding = await fetch(OrganisingSize[size]) //wait
+        var photoResponding = await fetch(OrganisingSize[size] || OrganisingSize.medium) //wait
         var valuabledogdata = await response.json()
         return valuabledogdata.message
     } catch (errorM) {
