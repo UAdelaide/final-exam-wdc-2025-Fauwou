@@ -59,7 +59,7 @@
                 throw new Error("we no get user data") //throws an error if the data isn't precisely accessible and runs fine
               }
               userTiming.value = await userGrabber.json() //to a json
-          } catch (errorM) {
+          } catch (errorM) {//catch error thrown if it fails to begin with
             error.value = errorM.message
           }
         }
