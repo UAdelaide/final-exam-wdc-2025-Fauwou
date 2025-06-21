@@ -82,6 +82,7 @@ app.post("/api/logout", async function(req, res) {
         console.error("we failed to log you out at this time:", errorM)
     }
 })
+})
 
 
 
