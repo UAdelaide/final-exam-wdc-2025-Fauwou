@@ -41,7 +41,7 @@ catch (errorM) { //catch error for if the login doesn't work
 async function DOGDISPLAY()
 {
     try {
-        var 
+        var callingidea = await fetch ()
     } catch (errorM) {
         console.error{"womp womp, no dogs today:", errorM}
     }
