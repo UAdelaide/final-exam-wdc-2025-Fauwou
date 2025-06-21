@@ -47,6 +47,7 @@ async function DOGDISPLAY()
         var doggies = await response.json
 
         var DogListing = document.getElementById("DOGGYLIST")
+        DogListing.innerHTML = ""
 
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
