@@ -109,7 +109,7 @@ app.get("/api/ownersdogs", async function(req,res)
         (
                 `SELECT dog_id, name FROM Dogs
                  WHERE owner_id = ?`,
-                [req.session]
+                [req.session.usering.id]
         )
 
 
