@@ -149,7 +149,7 @@ app.get("/api/dogs", async function(req, res, next)
     res.json(dogs)
   }
   catch (errorM) {
-    res.status(500).json({ error: "No dogs found." })
+    res.status(500).json({ error: "No dogs found in these lands." })
   }
 })
 
