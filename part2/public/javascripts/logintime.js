@@ -64,12 +64,12 @@ async function DOGDISPLAY()
             DogListing.appendChild(rowing)
         }
 
-        document.getElementById("TABLEFORDOGS").style.display = "block"
 
-
-    } catch (errorM) {
-        console.error("womp womp, no dogs today:", errorM)
+        } catch (errorM) {
+            console.error("womp womp, no dogs today:", errorM)
     }
+    document.getElementById("TABLEFORDOGS").style.display = "block"
+    
 }
 
 async function DOGPHOTOFIND(size)
