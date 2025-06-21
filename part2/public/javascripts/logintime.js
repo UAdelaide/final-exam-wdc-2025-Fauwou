@@ -69,7 +69,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
         }
 
 
-        document.getElementById("TABLEFORDOGS").style.display = "block"
+        document.getElementById("TABLEFORDOGS").style.display = "block" //unhides the table to show the information
         } catch (errorM) {
             console.error("womp womp, no dogs today:", errorM)
     }
