@@ -142,7 +142,7 @@ app.get("/api/dogs", async function(req, res, next)
   try {
    var [dogs] = await db.execute
       (`
-	  SELECT dug.dog_id, dug.name, dug.size, person.username as owner_id
+	  SELECT dug.dog_id, dug.name, dug.size, person.username as owner_name
       FROM Dogs dug
       JOIN Users person ON dug.owner_id = person.user_id
     `)
