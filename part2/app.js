@@ -97,12 +97,15 @@ app.post("/api/logout", async function(req, res) //sets up a facet for the api t
 })
 
 
-app.get("/api/ownersdogs", async function(req,res) {
+app.get("/api/ownersdogs", async function(req,res)
+{
     try {
-        if (){
-            
+        if ()
+        {
+
         }
 
+        
     }
     catch (errorM) {
         console.error("api for doggies not coming through:", errorM)
