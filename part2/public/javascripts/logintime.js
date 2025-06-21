@@ -42,7 +42,8 @@ async function DOGDISPLAY()
 {
     try {
         var callingidea = await fetch("/api/dogs")
-        if 
+        if (!callingidea.ok) throw new Error("did ")
+
         var doggies = await callingidea.json()
 
         var DogListing = document.getElementById("DOGGYLIST")
