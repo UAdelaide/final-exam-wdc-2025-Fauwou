@@ -84,7 +84,8 @@ app.post("/api/logout", async function(req, res) {
             success: false,
             message: "login no work"
         })
-        res.clearCookie("")
+        res.clearCookie("connect.sid")
+        
     }
   })
 })
