@@ -70,7 +70,7 @@ async function DOGDISPLAY()
     }
 }
 
-async function DOGPHOTOFIND(size    )
+async function DOGPHOTOFIND(size)
 {
     try {
         var OrganisingSize =
