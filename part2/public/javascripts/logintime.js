@@ -55,7 +55,7 @@ async function DOGDISPLAY()
             var rowing = document.createElement("tr")
             rowing.innerHTML =
             `
-             <td>${dog_id}</td>
+             <td>${dog.dog_id}</td>
              <td>${dog.name}</td>
              <td>${dog.size}</td>
              <td>${dog.owner_id}</td>
