@@ -82,13 +82,13 @@ app.post("/api/logout", async function(req, res) //sets up an existing post for 
     {
     if (errorM) { //checks for it to pass
         console.error("we failed to log you out at this time:", errorM)
-        return res.status(500).json({
+        return res.status(500).json({ //returns a 
             success: false,
             message: "login no work"
                 })
         }
-        res.clearCookie("connect.sid") //clears the cookie
-        res.json
+        res.clearCookie("connect.sid") //clears the cookie from the current session
+        res.json //stores the information in a json to pass to other files
         ({
             success: true,
             message: "we login with these"
