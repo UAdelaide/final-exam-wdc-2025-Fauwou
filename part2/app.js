@@ -76,9 +76,9 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 })
 
 
-app.post("/api/logout", async function(req, res)
+app.post("/api/logout", async function(req, res) //sets up an existing post for the api to access
 {
-    req.session.destroy(function(errorM)
+    req.session.destroy(function(errorM) //d
     {
     if (errorM) {
         console.error("we failed to log you out at this time:", errorM)
