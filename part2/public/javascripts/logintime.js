@@ -46,7 +46,7 @@ async function DOGDISPLAY()
 
         var doggies = await callingidea.json()
         console.log("Dogs received, over.", doggies)
-        
+
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
 
@@ -54,8 +54,7 @@ async function DOGDISPLAY()
         {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
             var rowing = document.createElement("tr")
-            rowing.innerHTML =
-            `
+            rowing.innerHTML = `
              <td>${dog.dog_id}</td>
              <td>${dog.name}</td>
              <td>${dog.size}</td>
