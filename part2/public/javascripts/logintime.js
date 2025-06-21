@@ -73,7 +73,13 @@ async function DOGDISPLAY()
 async function DOGPHOTOFIND()
 {
     try {
-        var SIZEORGANISER
+        var OrganisingSize =
+        {
+            small:
+            medium:
+            large:
+        }
+
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
