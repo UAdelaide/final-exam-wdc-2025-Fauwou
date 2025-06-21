@@ -135,6 +135,26 @@ app.get("/api/users/me", async function(req,res) //sets up an api access point t
     })
 })
 
+
+//from the PART 1 section
+app.get("/api/dogs", async function(req, res, next)
+{
+  try {
+   var [dogs] = await db.execute
+      (`
+	  SELECT dug.dog_id, dug.name, dug.size, person.username as owner_name
+      FROM Dogs dug
+      JOIN Users person ON dug.owner_id = person.user_id
+    `)
+    res.json(dogs)
+  }
+  catch (errorM) {
+    res.status(500).json({ error: "No dogs found." })
+  }
+})
+
+
+
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
