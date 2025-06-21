@@ -128,7 +128,7 @@ app.get("/api/users/me", async function(req,res) //sets up an api access point t
     {
         return res.status(401).json({ error:"check again, you broke something"}) //if it isn't, returns an inaccessible error
     }
-    res.json({ //puts the relevant data into an interpretable .json
+    res.json({ //puts the relevant data, the user_id, username and role into an interpretable .json
         user_id: req.session.usering.id,
         username: req.session.usering.username,
         role: req.session.usering.role
