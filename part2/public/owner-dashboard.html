@@ -152,9 +152,6 @@
                 headers: { "Content-Type" : "application/json"}
               })
               ownersDoggies.value = await doghouseReceives.json()
-              
-
-
           } catch (errorM) {
               error.value = "the dogs did not want to come in today"
           }
