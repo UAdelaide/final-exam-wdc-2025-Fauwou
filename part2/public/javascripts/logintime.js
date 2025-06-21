@@ -77,7 +77,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
 
 }
 
-async function DOGPHOTOFIND(size) 
+async function DOGPHOTOFIND(size) //across three sizes, fetches relevant photos to match the data of the dogs
 {
     try {
         var OrganisingSize =
