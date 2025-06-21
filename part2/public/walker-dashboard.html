@@ -56,7 +56,8 @@
           try {
               var userGrabber = await fetch("/api/users/me")
               if ()
-              userTiming
+              
+              userTiming.value = await userGrabber.json()
           } catch (errorM) {
             error.value = errorM.message
           }
