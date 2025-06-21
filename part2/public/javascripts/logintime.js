@@ -71,7 +71,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
 
         document.getElementById("TABLEFORDOGS").style.display = "block" //unhides the table to show the information
         } catch (errorM) {
-            console.error("womp womp, no dogs today:", errorM)
+            console.error("womp womp, no dogs today:", errorM) //another error catcher if all fails
     }
 
 
@@ -96,4 +96,4 @@ async function DOGPHOTOFIND(size)
     }
 }
 
-document.addEventListener("DOMContentLoaded", DOGDISPLAY)
+document.addEventListener("DOMContentLoaded", DOGDISPLAY) //loads the function first on page load so that an empty table isn't shown
