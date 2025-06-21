@@ -76,6 +76,12 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 })
 
 
+express.application.post()
+
+
+
+
+
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
