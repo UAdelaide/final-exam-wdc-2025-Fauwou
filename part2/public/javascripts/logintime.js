@@ -55,8 +55,8 @@ async function DOGDISPLAY()
             var rowing = document.createElement("tr")
             rowing.innerHTML =
             `<td>   <img src="${URLPHOTO}" class="doggy-photoing"></td>
-             <td></td>
-             <td></td>
+             <td>${dog.name}</td>
+             <td>${dog.name}</td>
              <td></td>`
         }
 
