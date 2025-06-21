@@ -38,7 +38,7 @@ catch (errorM) { //catch error for if the login doesn't work
 })
 
 
-async function DOGDISPLAY() //displays the information from 
+async function DOGDISPLAY() //displays the information from users and dogs into a set table
 {
     try {
         var callingidea = await fetch("/api/dogs")
