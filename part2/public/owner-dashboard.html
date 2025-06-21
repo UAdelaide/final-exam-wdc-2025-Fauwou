@@ -138,7 +138,7 @@
                 error.value = eventoutcome.message || "Logout sucked, not work" //fails if the check didnt pass
             }
           }
-           catch (errorM) {
+           catch (errorM) {// fails if something else larger occurs that prevents the check for occurring
             error.value = "WOW AN ERROR OCCURRED"
           }
         }
@@ -152,7 +152,7 @@
           walks,
           message,
           error,
-          logout,
+          logout, //
           submitWalkRequest
         };
       }
