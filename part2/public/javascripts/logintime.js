@@ -43,6 +43,6 @@ async function DOGDISPLAY()
     try {
 
     } catch (errorM) {
-        console.error{"womp womp, no dogs today"}
+        console.error{"womp womp, no dogs today:", errorM}
     }
 }
