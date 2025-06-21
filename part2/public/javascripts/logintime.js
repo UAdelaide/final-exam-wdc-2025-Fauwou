@@ -46,3 +46,12 @@ async function DOGDISPLAY()
         console.error{"womp womp, no dogs today:", errorM}
     }
 }
+
+async function DOGPHOTOFIND()
+{
+    try {
+
+    } catch (errorM) {
+        console.error{"womp womp, no dogs today:", errorM}
+    }
+}
