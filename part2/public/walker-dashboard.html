@@ -88,14 +88,14 @@
             var eventoutcome = await responsivething.json()
 
 
-            if (eventoutcome.success) //if 
+            if (eventoutcome.success) //if the response is reached, it attempts to redirect to index
             {
               window.location.href = "/index.html"
             } else
-              {
+              { //if not, displas an error message
                 error.value = eventoutcome.message || "Logout sucked, not work"
             }
-          }
+          } 
            catch (errorM) {
             error.value = "WOW AN ERROR OCCURRED"
           }
