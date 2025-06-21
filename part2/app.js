@@ -76,7 +76,7 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 })
 
 
-app.post("/api/logout", async function(req, res) //sets up an existing post for the api to access
+app.post("/api/logout", async function(req, res) //sets up a facet for the api to access
 {
     req.session.destroy(function(errorM) //asks for destruction of current session
     {
