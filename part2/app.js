@@ -104,7 +104,7 @@ app.get("/api/ownersdogs", async function(req,res) {
     }
     catch (errorM) {
         console.error("api for doggies not coming through:", errorM)
-        res.status 
+        res.status(500).json({ error: ""})
     }
 })
 
