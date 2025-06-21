@@ -87,9 +87,9 @@ async function DOGPHOTOFIND(size) //across three sizes, fetches relevant photos 
             large: "https://dog.ceo/api/breed/mastiff/images/random"
         } //random photos set for each size
 
-        var photoResponding = await fetch(OrganisingSize[size] || OrganisingSize.medium) //returns 
-        var valuabledogdata = await photoResponding.json()
-        return valuabledogdata.message
+        var photoResponding = await fetch(OrganisingSize[size] || OrganisingSize.medium) //returns to a variable a photo of matching size
+        var valuabledogdata = await photoResponding.json() //stores the photo into a json
+        return valuabledogdata.message //sends a response of the message
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
         return "https://images.dog.ceo/breeds/affenpinscher/n02110627_11614.jpg"
