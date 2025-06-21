@@ -87,10 +87,9 @@ app.post("/api/logout", async function(req, res) {
         }
         res.clearCookie("connect.sid")
         res.json({
-            
-        })
-
-
+            success: true,
+            message: "we login with these"
+    })
   })
 })
 
