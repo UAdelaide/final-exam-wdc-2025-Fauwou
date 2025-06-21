@@ -38,4 +38,11 @@ catch (errorM) { //catch error for if the login doesn't work
 })
 
 
-async function 
+async function DOGDISPLAY()
+{
+    try {
+
+    } catch (errorM) {
+
+    }
+}
