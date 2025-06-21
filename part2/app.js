@@ -137,7 +137,7 @@ app.get("/api/users/me", async function(req,res) //sets up an api access point t
 
 
 //from the PART 1 section
-app.get("/api/dogs", async function(req, res, next)
+app.get("/api/dogs", async function(req, res, next) //
 {
   try {
    var [dogs] = await db.execute
