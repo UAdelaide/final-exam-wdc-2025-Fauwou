@@ -26,10 +26,11 @@
         <form @submit.prevent="submitWalkRequest">
 
           <div class="mb-3">
-            <label class="form-label">Your Dogs</label> <!-- allowing for the onwers to see their dogs-->
+            <label class="form-label">Your Dogs</label> <!-- allowing for the owners to see their dogs-->
             <select v-model="form.dog_id" class="form-select" required>
               <option disabled value="">YOUR DOGGIES!!!</option>
               <option v-for="dog in ownersDoggies" :value="dog.dog_id" :key="dog.dog_id"> {{ dog.name }} </option>
+              <!---->
             </select>
             <!--<input v-model="form.dog_id" type="number" class="form-control" required>-->
           </div>
