@@ -54,7 +54,7 @@
         async function SELECTCurrentUSER()
         {
           try {
-              var 
+              var userGrabber = await fetch("/api/users/me")
           } catch (errorM) {
             error.value = errorM.message
           }
