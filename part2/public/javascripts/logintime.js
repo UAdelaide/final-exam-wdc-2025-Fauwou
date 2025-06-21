@@ -52,7 +52,7 @@ async function DOGDISPLAY()
         for (var dog of doggies)
         {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
-            
+            var rowing = document.createElement()
         }
 
     } catch (errorM) {
