@@ -80,7 +80,7 @@ app.post("/api/logout", async function(req, res)
 {
     req.session.destroy(function(errorM) {
     if (errorM) {
-
+        console.error("we failed to log you out at this time:")
     }
 })
 
