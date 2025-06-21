@@ -78,7 +78,8 @@ app.post("/api/login", async function(req, res)//sends the login connection with
 
 app.post("/api/logout", async function(req, res)
 {
-    req.session.destroy(function(errorM) {
+    req.session.destroy(function(errorM)
+    {
     if (errorM) {
         console.error("we failed to log you out at this time:", errorM)
         return res.status(500).json({
@@ -87,11 +88,12 @@ app.post("/api/logout", async function(req, res)
                 })
         }
         res.clearCookie("connect.sid")
-        res.json({
+        res.json
+        ({
             success: true,
             message: "we login with these"
+        })
     })
-  })
 })
 
 
