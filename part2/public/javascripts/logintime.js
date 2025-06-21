@@ -49,6 +49,11 @@ async function DOGDISPLAY()
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
 
+        for (var dog of dogs)
+        {
+            
+        }
+
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
