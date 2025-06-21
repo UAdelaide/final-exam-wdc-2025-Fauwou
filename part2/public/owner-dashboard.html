@@ -89,9 +89,9 @@
         });
 
         const walks = ref([]);
+        const ownersDoggies = ref([]) // declares a variable to sort array of owners dogs
         const message = ref('');
         const error = ref('');
-        const ownersDoggies = ref([]) // declares a variable to sort array of owners dogs
 
         async function loadWalks() {
           try {
