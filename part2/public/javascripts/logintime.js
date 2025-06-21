@@ -69,8 +69,8 @@ async function DOGDISPLAY()
             console.error("womp womp, no dogs today:", errorM)
     }
     document.getElementById("TABLEFORDOGS").style.display = "block"
-    
-}
+
+} 
 
 async function DOGPHOTOFIND(size)
 {
