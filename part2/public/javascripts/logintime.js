@@ -63,8 +63,10 @@ async function DOGDISPLAY()
              `
             DogListing.appendChild(rowing)
         }
-    
+
         document.getElementById("TABLEFORDOGS").style.display = "block"
+
+
     } catch (errorM) {
         console.error("womp womp, no dogs today:", errorM)
     }
