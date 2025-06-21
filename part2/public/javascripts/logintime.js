@@ -69,10 +69,11 @@ async function DOGDISPLAY()
         }
 
 
+        document.getElementById("TABLEFORDOGS").style.display = "block"
         } catch (errorM) {
             console.error("womp womp, no dogs today:", errorM)
     }
-    document.getElementById("TABLEFORDOGS").style.display = "block"
+
 
 }
 
