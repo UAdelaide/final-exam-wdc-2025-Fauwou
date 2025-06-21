@@ -47,7 +47,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
         var doggies = await callingidea.json() //saves it to a json
         console.log("Dogs received, over.", doggies) //logs it if it passes
 
-        var DogListing = document.getElementById("DOGGYLIST")
+        var DogListing = document.getElementById("DOGGYLIST") //gets the id for the list to be modified and inputted
         DogListing.innerHTML = ""
 
         for (var dog of doggies)
