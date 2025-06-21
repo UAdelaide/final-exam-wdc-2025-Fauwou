@@ -87,7 +87,7 @@ async function DOGPHOTOFIND(size) //across three sizes, fetches relevant photos 
             large: "https://dog.ceo/api/breed/mastiff/images/random"
         } //random photos set for each size
 
-        var photoResponding = await fetch(OrganisingSize[size] || OrganisingSize.medium) //
+        var photoResponding = await fetch(OrganisingSize[size] || OrganisingSize.medium) //returns 
         var valuabledogdata = await photoResponding.json()
         return valuabledogdata.message
     } catch (errorM) {
