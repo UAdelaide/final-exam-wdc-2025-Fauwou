@@ -123,18 +123,22 @@
 
         async function logout() {
           try {
-            var responsivething = await fetch("/api/logout", {
+            var responsivething = await fetch("/api/logout",
+            {
               method: "POST"
             })
             var eventoutcome = await responsivething.json()
 
 
-            if (resp)
+            if (eventoutcome.success)
+            {
+
+            }
           }
            catch (errorM) {
             error.value = "WOW AN ERROR OCCURRED"
           }
-
+        }
 
         onMounted(() => {
           loadWalks();
