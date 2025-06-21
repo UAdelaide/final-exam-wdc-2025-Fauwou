@@ -129,8 +129,8 @@ app.get("/api/users/me", async function(req,res)
         return res.status(401).json({ error:"check again, you broke something"})
     }
     res.json({
-        user_id: 
-        username:
+        user_id: req.session.usering.id,
+        username: req.session.usering.username,
         role:
     })
 
