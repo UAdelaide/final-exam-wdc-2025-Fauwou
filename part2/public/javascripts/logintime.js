@@ -38,11 +38,11 @@ catch (errorM) { //catch error for if the login doesn't work
 })
 
 
-async function DOGDISPLAY() //displays the information from users and dogs into a set table
+async function DOGDISPLAY() //displays the information from users and dogs into a set table via index.html
 {
     try {
         var callingidea = await fetch("/api/dogs")
-        if (!callingidea.ok) throw new Error("did get no dogs here")
+        if (!callingidea.ok) throw new Error("did get no dogs here") //checks it
 
         var doggies = await callingidea.json()
         console.log("Dogs received, over.", doggies)
