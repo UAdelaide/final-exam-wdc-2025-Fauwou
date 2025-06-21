@@ -81,8 +81,10 @@ app.post("/api/logout", async function(req, res) {
     if (errorM) {
         console.error("we failed to log you out at this time:", errorM)
         return res.status(500).json({
-            success:
+            success: false,
+            message: "login no work"
         })
+        res.clearCookie("")
     }
   })
 })
