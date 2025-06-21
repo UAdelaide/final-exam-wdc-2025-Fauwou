@@ -103,7 +103,7 @@ app.get("/api/ownersdogs", async function(req,res)
         if ()
         {
 
-            
+            var [dogs] = await db.execute
         }
 
         res.json(dogs)
