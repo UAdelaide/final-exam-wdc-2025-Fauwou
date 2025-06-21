@@ -101,8 +101,10 @@ app.get("/api/ownersdogs", async function(req,res)
 {
     try {
         if (!req.session.usering || req.session.usering.role !== "owner")
+            {
+                
+         }
         {
-
             var [dogs] = await db.execute
             (
                 `SELECT dog_id, name FROM Dogs
