@@ -151,8 +151,8 @@
               var doghouseReceives = await fetch("/api/ownersdogs", {
                 headers: { "Content-Type" : "application/json"}
               })
-              ownersDoggies.value = await doghouseReceives.json()
-          } catch (errorM) { //error catcher to check 
+              ownersDoggies.value = await doghouseReceives.json() //saves values to json
+          } catch (errorM) { //error catcher to check if function fails
               error.value = "the dogs did not want to come in today"
           }
         }
