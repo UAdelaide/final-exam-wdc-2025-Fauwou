@@ -50,7 +50,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
         var DogListing = document.getElementById("DOGGYLIST") //gets the id for the list to be modified and inputted
         DogListing.innerHTML = ""
 
-        for (var dog of doggies) //loops through each registered dog and applies the same information across it all
+        for (var dog of doggies) //loops through each registered dog and applies the relevant information across it all
         {
             try {
             var URLPHOTO = await DOGPHOTOFIND(dog.size)
@@ -62,7 +62,7 @@ async function DOGDISPLAY() //displays the information from users and dogs into 
              <td>${dog.owner_name}</td>
              <td><img src="${URLPHOTO}" class="dog-photoing"></td>
              `
-            DogListing.appendChild(rowing)
+            DogListing.appendChild(rowing) //adds it to the <tr> tag within the table
             } catch (errorP) {
                 console.error("photo of dog no come yet", errorP)
             }
