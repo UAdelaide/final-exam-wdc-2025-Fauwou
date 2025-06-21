@@ -126,7 +126,7 @@ app.get("/api/users/me", async function(req,res)
 {
     if (!req.session.usering)
     {
-        
+        return res.status(401).json({ error:})
     }
 })
 
