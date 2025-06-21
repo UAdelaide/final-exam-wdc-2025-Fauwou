@@ -127,12 +127,12 @@
             {
               method: "POST"
             })
-            var eventoutcome = await responsivething.json()
+            var eventoutcome = await responsivething.json() //awaits for a response for json
 
 
-            if (eventoutcome.success)
+            if (eventoutcome.success) //checks if it passes
             {
-              window.location.href = "/index.html"
+              window.location.href = "/index.html" //redirects to index.html if so
             } else
               {
                 error.value = eventoutcome.message || "Logout sucked, not work"
