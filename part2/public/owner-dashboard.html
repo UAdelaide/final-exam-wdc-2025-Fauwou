@@ -148,7 +148,9 @@
         async function loadingWhoLetTheDogsIn()
         {
           try {
-              var doghouseReceives = await fetch("/api/ownersdogs")
+              var doghouseReceives = await fetch("/api/ownersdogs", {
+                headers: { }
+              })
 
 
           } catch (errorM) {
