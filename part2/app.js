@@ -99,12 +99,14 @@ app.post("/api/logout", async function(req, res) //sets up a facet for the api t
 
 app.get("/api/ownersdogs", async function(req,res) {
     try {
-
+        if (){
+            
+        }
 
     }
     catch (errorM) {
         console.error("api for doggies not coming through:", errorM)
-        res.status(500).json({ error: ""})
+        res.status(500).json({ error: "failed fetching for those poor dogs" })
     }
 })
 
