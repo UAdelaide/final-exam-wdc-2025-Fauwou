@@ -126,9 +126,9 @@ app.get("/api/users/me", async function(req,res) //sets up an api access point t
 {
     if (!req.session.usering) //checks if the req for user session is not active
     {
-        return res.status(401).json({ error:"check again, you broke something"})
+        return res.status(401).json({ error:"check again, you broke something"}) //if it isn't, returns an inaccessible error
     }
-    res.json({
+    res.json({ 
         user_id: req.session.usering.id,
         username: req.session.usering.username,
         role: req.session.usering.role
