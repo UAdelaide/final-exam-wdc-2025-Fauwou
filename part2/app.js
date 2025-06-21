@@ -131,9 +131,8 @@ app.get("/api/users/me", async function(req,res)
     res.json({
         user_id: req.session.usering.id,
         username: req.session.usering.username,
-        role:
+        role: req.session.usering.role
     })
-
 })
 
 // Routes
