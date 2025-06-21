@@ -45,7 +45,7 @@ async function DOGDISPLAY()
         if (!callingidea.ok) throw new Error("did get no dogs here")
 
         var doggies = await callingidea.json()
-        
+        console.log("Dogs received, over.", doggies)
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
 
