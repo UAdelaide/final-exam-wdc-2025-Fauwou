@@ -46,6 +46,7 @@ async function DOGDISPLAY()
 
         var doggies = await callingidea.json()
         console.log("Dogs received, over.", doggies)
+        
         var DogListing = document.getElementById("DOGGYLIST")
         DogListing.innerHTML = ""
 
